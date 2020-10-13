@@ -1,0 +1,17 @@
+﻿@model List<uppgit_1_nr2.Book>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Book</h1>
+<a href="/Book/Create" class=" btn btn-info">Create</a>
+
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>
+            <a href="/Book/Details/@book.Id">@book.Title</a>
+        </li>
+    }
+</ul>

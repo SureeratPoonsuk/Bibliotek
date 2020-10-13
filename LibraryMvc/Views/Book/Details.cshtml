@@ -1,0 +1,11 @@
+﻿@model uppgit_1_nr2.Book
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<a href ="/Book/Delete/@Model.Id" class=" btn btn-warning">Delete</a>
+
+<h2>Title</h2>@Model.Title
+<h2>Author</h2>@Model.Author
